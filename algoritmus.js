@@ -1,6 +1,6 @@
 function myFunction() {
     let a = document.getElementById('My_FirstNumber').value;
-    let b = document.getElementById('My_SecoundtNumber').value;
+    let b = document.getElementById('My_SecondNumber').value;
     let max;
 
 
