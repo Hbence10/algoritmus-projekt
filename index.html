@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +8,47 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="hatter keret">
         <h1>Legnagyobb közös osztó</h1>
-        <p>Irja be az alábbi mezőkbe azokat a számokat amelyikeknek tudni szeretné a legnagyobb közös osztóját<table></table></p>
-        <input type="number" name="" id="szam1">
-        <input type="number" name="" id="szam2">
-        <button id="gomb">Számítás</button>
-        <p>A két szám legnagyobb osztója a(z):<span id="eredmeny"></span></p>
+        <p>Irja be az alábbi mezőkbe azokat a számokat amelyikeknek tudni szeretné a legnagyobb közös osztóját
+        </p>
+        <form action="">
+            <label for="number1">az első szám</label>
+            <input type="number" id="My_FirstNumber" name="number1"><br><br>
+            <label for="number2">a masodik szám:</label>
+            <input type="number" id="My_SecoundtNumber" name="number2"><br><br>
+            <button type="button" onclick="myFunction()">Számol</button>
+        </form>
+        <p>A két szám legnagyobb osztója a(z):</p>
+        <p id="eredmeny">&nbsp;</p>
         <img src="Examples-of-Highest-Common-Factor.png" alt="" class="kep">
     </div>
-    <script src="algoritmus.js"></script>
+    <script>
+
+        function myFunction() {
+            let a = document.getElementById('My_FirstNumber').value;
+            let b = document.getElementById('My_SecoundtNumber').value;
+            let max;
+
+
+            if (a > b) { max = a }
+            else { max = b };
+
+            for (let i = 1; i <= max; i++) {
+                if (a % i == 0 && b % i == 0) {
+                    text = i;
+                }
+                else (
+                    text = "nincs közös osztó"
+                )
+            }
+            document.getElementById("eredmeny").innerHTML = text;
+        }
+
+
+    </script>
 </body>
+
 </html>

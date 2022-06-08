@@ -1,7 +1,7 @@
 const gomb = document.getElementById('gomb');
 gomb.addEventListener("click", szamitas);
 
-let hcf;
+let hcf = 0;
 
 function szamitas (){
 const number1 = document.getElementById('szam1').value;
@@ -11,4 +11,5 @@ for (let i = 1; i <= number1 && i <= number2; i++) {
         hcf = i;
         }   
     }
-}
+    }
+    
