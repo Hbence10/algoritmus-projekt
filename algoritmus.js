@@ -1,15 +1,19 @@
-const gomb = document.getElementById('gomb');
-gomb.addEventListener("click", szamitas);
+function myFunction() {
+    let a = document.getElementById('My_FirstNumber').value;
+    let b = document.getElementById('My_SecoundtNumber').value;
+    let max;
 
-let hcf = 0;
 
-function szamitas (){
-const number1 = document.getElementById('szam1').value;
-const number2 = document.getElementById('szam2').value;
-for (let i = 1; i <= number1 && i <= number2; i++) {
-    if( number1 % i == 0 && number2 % i == 0) {
-        hcf = i;
-        }   
+    if (a > b) { max = a }
+    else { max = b };
+
+    for (let i = 1; i <= max; i++) {
+        if (a % i == 0 && b % i == 0) {
+            text = i;
+        }
+        else (
+            text = "nincs közös osztó"
+        )
     }
-    }
-    
+    document.getElementById("eredmeny").innerHTML = text;
+}
