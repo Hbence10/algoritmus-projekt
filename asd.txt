@@ -1,0 +1,9 @@
+Program kezdete
+Az a változó egyenlő a My_FirstNumber inputjában való értékkel. 
+A b változó egyenlő a My_SecondNumber inputjában való értékkel.
+Ezek melett van egy max változonk.
+Ha a > mint b akkor a max egyenlő a-val. Ha nem akkor max egyenlő b-vel.
+Ezek után következik egy ciklus. Az i változó egyenló 1-gyel.
+i nagyobb vagy egyenlő mint max. I-hez még hozzáadunk 1-et.
+Utána ha a-nál és b-nél is osztunk és egyenlp mint nulla akkor text egyenlő az i-vel. Ha ez nem igaz akkor text egyenlő "Nincs közös osztó".
+Program vége.
